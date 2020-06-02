@@ -11,6 +11,12 @@
 <body>
   <div class="container-chat">
     <div class="chat">
+      <% messages.forEach((message) => {%>
+      <div class="bubble-chat">
+        <h5>message.name</h5>
+        <p>message.pesan</p>
+      </div>
+      <% }) %>
       <div class="wrapper-text-chat">
         <form action="">
           <input type="text" class="text-chat">
@@ -19,6 +25,5 @@
       </div>
   </div>
 </div>
-    
 </body>
 </html>

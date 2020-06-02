@@ -4,6 +4,11 @@ body {
     height: 100vh;
 }
 
+a {
+    display: block;
+    text-decoration: none;
+  }
+
 /*====LOGIN====*/
 .container-login {
     display: flex;
@@ -31,7 +36,22 @@ body {
     font-size: 28px;
 }
 
-.form-login .btn-submit {
+.btn-submit {
+    width: 392px;
+    height: 79px;
+    margin-top: 48px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.0);
+    color: #FC5185;
+    border: 3px solid #FC5185;
+    font-weight: 900;
+    letter-spacing: 5px;
+    font-size: 34px;
+    border-radius: 15px;
+    translate: 0.3;
+}
+
+/* .form-login .btn-submit {
     width: 392px;
     height: 79px;
     margin-top: 48px;
@@ -43,11 +63,10 @@ body {
     font-size: 34px;
     border-radius: 15px;
     translate: 0.3;
-}
+} */
 
 .btn-submit:hover {
     background-color: #FC5185;
-    border: none;
     color: #F4F4F4;
 }
 
@@ -63,15 +82,19 @@ body {
     position: relative;
     width: 793px;
     height: 494px;
-    padding-left: 31px;
+    padding: 31px;
     background-color: #FFF;
     border-radius: 15px;
-    overflow: auto;
+    overflow: scroll;
+}
+
+.chat::-webkit-scrollbar {
+    display: none;
 }
 
 .wrapper-text-chat {
-    position: absolute;
-    left: 31px;
+    position: fixed;
+    margin: 3% auto;
     bottom: 31px;
 }
 .text-chat{
@@ -81,6 +104,9 @@ body {
     background-color: #303A52;
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.16);
     border-radius: 15px;
+    color: #F4F4F4;
+    padding-left: 10px;
+    font-weight: 400;
 }
 
 .btn-kirim {
@@ -90,4 +116,22 @@ body {
     border-radius: 50px;
     background-color: #303A52;
     border: none;
+}
+
+.bubble-chat {
+    background-color: #F4F4F4;
+    color: #303A52;
+    padding: 0px 15px; 
+    border-radius: 15px;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.16);
+}
+
+.bubble-chat h5 {
+    font-size: 18px;
+    padding-top: 8px;
+}
+
+.bubble-chat p {
+    margin-top: -25px;
+    padding-bottom: 8px;
 }
